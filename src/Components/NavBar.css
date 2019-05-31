@@ -1,0 +1,25 @@
+.toolbar{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    font-family: monospace;
+}
+.toolbar_navigation-items{
+    width: 39%;
+    margin: 0;
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pro-button{
+    font-size: 20px;
+    background-color: #0000006e;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+.nav-container{
+    height: 6vh;
+}

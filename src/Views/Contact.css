@@ -1,0 +1,17 @@
+.contact-container{
+    display: flex;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    flex-direction: column;
+    justify-content: center;
+}
+.cv, .email, .gitHub, .linkedin, .twitter{
+    font-size: 20px;
+    padding: 1%;
+    border: double;
+    margin: 4%;
+    width: 53%;
+    display: flex;
+    justify-content: center;
+}
