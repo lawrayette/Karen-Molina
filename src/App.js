@@ -1,25 +1,23 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import React from 'react'
-import './App.css'
-import Home from './Views/Home'
-import About from './Views/AboutMe'
-import Projects from './Views/Projects'
-import Contact from './Views/Contact'
-import Wall from './Components/Wall'
+import React, { Component } from 'react'
+import './Resoures/resources/styles.scss'
+import { Element } from 'react-scroll'
+import Header from './Components/Header_footer/Header'
+import Featured from './Components/Featured'
+import Footer from './Components/Header_footer/Footer'
 
-class App extends React.Component {
+class App extends Component {
   render () {
     return (
-      <Router>
-        <Wall>
-          <Switch className='container'>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/About' component={About} />
-            <Route exact path='/Projects' component={Projects} />
-            <Route exact path='/Contact' component={Contact} />
-          </Switch>
-        </Wall>
-      </Router>
+      <div
+        className='App'
+        style={{ height: 'auto', background: '#141414' }}
+      >
+        <Header />
+        <Element name='featured'>
+          <Featured />
+        </Element>
+        <Footer />
+      </div>
     )
   }
 }

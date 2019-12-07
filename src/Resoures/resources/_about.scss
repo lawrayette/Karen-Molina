@@ -1,0 +1,13 @@
+#about{
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    #container{
+        background-color: #dbdbdb42;
+        position: absolute;
+        max-width: 1200px;
+        width: 72%;
+        height: 68vh;
+        padding: 55px 25px;
+    }
+}
