@@ -45,7 +45,7 @@ class project extends Component {
         return (
             <div className="bck_black">
                 <div className="center_wrapper project_section">
-                    <h2>Projectos</h2>
+                    <h2>Proyectos</h2>
 
                     <div className="project_wrapper">
                         {this.showBoxes()}

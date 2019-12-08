@@ -30,6 +30,15 @@ body {
 
 }
 
+.MuiSvgIcon-root-49{
+    color: #ea4b3b !important;
+}
+
+.MuiListItem-button-114 {
+    padding: 33% !important;
+    color: #141414 !important;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
 
 .MuiListItem-button-178 {
     padding: 21%;
@@ -39,7 +48,8 @@ body {
 .MuiDrawer-paperAnchorRight-66 {
     left: auto;
     right: 0;
-    background: #0a0a0a9e !important;
+    width: 100% !important;
+    background: #ea4b3b9e !important;
     color: white;
     transform: translate(0px, 0px);
     transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
@@ -76,15 +86,9 @@ body {
     min-height: 104px;
 }
 .center_wrapper {
-    width: 900px;
+    width: 75%;
     margin:0 auto;
 }
-
-
-
-/*====================
-        FOOTER
-======================*/
 
 
 

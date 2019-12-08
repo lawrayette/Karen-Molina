@@ -8,13 +8,17 @@
         max-width: 1000px;
         width: 72%;
         height: auto;
-        padding: 65px 20px;
+        padding: 65px 20px 0px;
         #name{
             color: whitesmoke;
             padding: 0px 20px;
             h1{
                 text-transform: uppercase;
                 font-weight: 600;
+                font-size: 3rem;
+                @media(max-width: 800px){
+                    font-size: 2rem;
+                }
             }
             p{
                 color:#ea4b3b;
@@ -39,7 +43,6 @@
                 &:hover{
                     color:#ea4b3b;
                 }
-  
             }
         }
     }

@@ -7,10 +7,10 @@ const About = () => {
       <Particles />
       <div id='container'>
         <div id='name'>
-          <h1>Karen Molina</h1>
+          <h1>Void Rizoma</h1>
         </div>
         <div id='about_container'>
-          <p>Maker, Frontend, STEAM Edu, <br /> Antropología y Cultura Digital</p>
+          <p>Maker, Development, STEAM Edu, <br /> Antropología y Cultura Digital</p>
         </div>
         <div id='icons_container'>
           <a href='https://www.linkedin.com/in/karen-molinac/' target='blank'><i className='fab fa-linkedin' /></a>

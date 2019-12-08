@@ -22,16 +22,16 @@ const SideDrawer = props => {
       onClose={() => props.onClose(false)}
     >
       <List component='nav'>
-        <ListItem button onClick={() => scrollToElement('featured')}>
-          Inicio
+        <ListItem button onClick={() => scrollToElement('workshops')}>
+          Talleres
         </ListItem>
 
-        <ListItem button onClick={() => scrollToElement('highlights')}>
-          Apaseo el Alto, Guanajuato
+        <ListItem button onClick={() => scrollToElement('talks')}>
+          Charlas
         </ListItem>
 
-        <ListItem button onClick={() => scrollToElement('colmena')}>
-          La Colmena, Talxcala
+        <ListItem button onClick={() => scrollToElement('projects')}>
+          Proyectos
         </ListItem>
       </List>
     </Drawer>
