@@ -2,10 +2,6 @@
 .pricing_section {
     padding: 70px 0px;
     text-align: center;
-    @media(max-width:400px){
-        display: flex;
-
-    }
     h2{
         display: inline;
         color: #141414;
@@ -13,6 +9,9 @@
         text-align: center;
         font-size: 50px;
         margin: 0;
+        @media(max-width: 400px){
+            font-size: 30px;
+        }
     }
 }
 
@@ -30,7 +29,7 @@
         padding: 20px;
         box-sizing: border-box;
         @media(max-width: 800px){
-            width: 85%;
+            width: auto;
         }
     }
     .pricing_inner_wrapper {

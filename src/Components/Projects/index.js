@@ -5,7 +5,7 @@ import Zoom from 'react-reveal/Zoom'
 class project extends Component {
     state = {
         prices:[100,150,250],
-        positions:['CipherxDDHH','Punto Steam','Hacklab (web)'],
+        positions:['Cipher x DDHH','Punto Steam','Hacklab (web)'],
         desc:[
             'Es una webapp que aplica la criptografía cecareana. Enfocado y dirigido para la enseñanza de la importancia de la seguridad digital y la criptografía en el taller Seguridad Digital para Morras, realizado en el CCD, 2019.',
             'Red social enfoncada para personas e instituciones interesadas en el movimiento educativo STEAM en México. Realizado con React, Firebase, CSS3, como parte de la serie de proeyectos en Laboratoria',
