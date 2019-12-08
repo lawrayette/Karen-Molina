@@ -13,7 +13,7 @@ class Canvas extends Component {
   updateWindowDimensions = () => {
     this.setState({
       width: `${95}vw`,
-      height: `${80}vh`
+      height: `${75}vh`
     });
   };
   render() {
@@ -32,7 +32,7 @@ class Canvas extends Component {
               }
             },
             color: {
-              value: "#ea4b3b"
+              value: "#a2a1a1"
             },
             size: {
               value: 5,
@@ -40,14 +40,14 @@ class Canvas extends Component {
               anim: {
                 enable: true,
                 speed: 5,
-                size_min: 0.1,
+                size_min: 3.1,
                 sync: false
               }
             },
             line_linked: {
               enable_auto: true,
               distance: 100,
-              color: "#ea4b3b",
+              color: "#a2a1a1",
               opacity: 1,
               width: 1,
               condensed_mode: {

@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <footer className='bck_red'>
       <Fade delay={500}>
-        <div className='font_righteous footer_logo_venue'>Laboratorio de Ciudadanía Digital</div>
+        <div className='font_righteous footer_logo_venue'>Lorem</div>
         <div className='footer_copyright'>
-        LCD es una iniciativa del CCEMx, Fundación Telefónica, Ateneo Español de México A.C y La Caixa.
+        Lorem
         </div>
       </Fade>
     </footer>

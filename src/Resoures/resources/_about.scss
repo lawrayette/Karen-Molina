@@ -1,13 +1,46 @@
 #about{
     display: flex;
     justify-content: center;
-    padding: 10%;
+    padding: 5%;
     #container{
-        background-color: #dbdbdb42;
+        background-color: #1414146b;
         position: absolute;
-        max-width: 1200px;
+        max-width: 1000px;
         width: 72%;
-        height: 68vh;
-        padding: 55px 25px;
+        height: auto;
+        padding: 65px 20px;
+        #name{
+            color: white;
+            padding: 0px 20px;
+            h1{
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            p{
+                color:#ea4b3b;
+            }
+        }
+        #about_container{
+            height: 45vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            color: #ea4b3b;
+        }
+        #icons_container{
+            padding: 2% 9%;
+            margin-top: 51px;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            font-size:1.5em;
+            a{
+                color:white;
+                &:hover{
+                    color:#ea4b3b;
+                }
+  
+            }
+        }
     }
 }
