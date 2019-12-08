@@ -1,0 +1,25 @@
+.bck_red {
+    background: #141414;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #icons_container{
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        list-style: none;
+        font-size:1.5em;
+        a{
+            color:whitesmoke;
+            &:hover{
+                color:#ea4b3b;
+            }
+    
+        }
+    }
+}
+
+
+
+
