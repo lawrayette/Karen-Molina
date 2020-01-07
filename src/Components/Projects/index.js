@@ -30,7 +30,7 @@ class project extends Component {
                         <div className="project_buttons">
                             <MyButton
                                 text="Ver más..."
-                                bck="#ea4b3b"
+                                bck="#d2b800"
                                 color="#ffffff"
                                 link={this.state.linkto[i]}
                             />

@@ -30,7 +30,7 @@ class Pricing extends Component {
                         <div className="pricing_buttons">
                             <MyButton
                                 text="Ver más..."
-                                bck="#ea4b3b"
+                                bck="#d2b800"
                                 color="#ffffff"
                                 link={this.state.linkto[i]}
                             />

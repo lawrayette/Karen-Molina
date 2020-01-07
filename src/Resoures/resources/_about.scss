@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     padding: 5%;
+    height: 100vh;
     #container{
         background-color: #1414146b;
         position: absolute;
@@ -19,15 +20,22 @@
             color: whitesmoke;
             padding: 0px 20px;
             h1{
-                text-transform: uppercase;
+                text-transform:lowercase;
                 font-weight: 600;
                 font-size: 3rem;
                 @media(max-width: 800px){
                     font-size: 1.5rem;
                 }
+                &:hover{
+                    color: #d2b800;
+                    text-transform: uppercase;
+                    text-decoration-style: dotted;
+
+                }
             }
             p{
-                color:#ea4b3b;
+                color:#d2b800;
+                
             }
         }
         #about_container{
@@ -35,7 +43,9 @@
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
-            color: #ea4b3b;
+            color: #d2b800;
+            text-transform: uppercase;
+            font-weight: 700;
         }
         #icons_container{
             padding: 2% 9%;
@@ -47,7 +57,7 @@
             a{
                 color:whitesmoke;
                 &:hover{
-                    color:#ea4b3b;
+                    color:#d2b800;
                 }
             }
         }
