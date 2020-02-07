@@ -11,7 +11,7 @@ class Pricing extends Component {
             'Sensibilizar a los niños y niñas sobre su papel en la conservación de la naturaleza, particularmente la importancia de cuidar las especies polinizadoras, utilizando la tecnología como herramienta de aprendizaje.',
             'Durante 2016 y 2017 estuve como docente invitada en Hacedores Makerspace, realizando actividades de enseñanza de electrónica, programación y fabricación digital a niños y jóvenes en espacios de deducación formal'
         ],
-        linkto:['https://lcd-hacklab.firebaseapp.com/','https://rizomamutante.wordpress.com/2018/09/18/bio-robots-softcircuits-insectos-y-ambiente/','https://rizomamutante.wordpress.com/2018/09/18/colaborando-con-hacedores-makerspace/'],
+        linkto:['https://lcd-hacklab.firebaseapp.com/','/biorobots','https://rizomamutante.wordpress.com/2018/09/18/colaborando-con-hacedores-makerspace/'],
         delay:[500,0,500]
 
     }

@@ -3,7 +3,7 @@ import React from 'react'
 import Home from './Components/Views/Home'
 import BioRobots from './Components/Pages/BioRobots'
 
-class Routes extends React.Component {
+class Router extends React.Component {
     render () {
       return (
         <Router>
@@ -16,4 +16,4 @@ class Routes extends React.Component {
     }
   }
   
-  export default Routes
+  export default Router
