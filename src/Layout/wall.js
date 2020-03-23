@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './header'
-import Footer from '../Components/Home/Header_footer/Footer'
+import Footer from '../Components/Header_footer/Footer'
 
 class Layout extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class Layout extends React.Component {
         <Header />
         <div
             style = {{
-                height:'78vh',
+                height:'auto',
                 display:'flex',
                 justifyContent:'center',
                 alignItems:'center',

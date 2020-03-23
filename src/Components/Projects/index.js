@@ -5,13 +5,13 @@ import Zoom from 'react-reveal/Zoom'
 class project extends Component {
     state = {
         prices:[100,150,250],
-        positions:['Kactacea Edu','Punto Steam','Hacklab (web)'],
+        positions:['Kactacea Edu','Cipher x DDHH','Hacklab (web)'],
         desc:[
             'Kactacea Edu es un colectivo enfocado a la educación y el movimiento STEAM, está formado por una colega y yo. La plataforma se encuentra en construcción, pero pueden ver el piloto.',
-            'Red social enfoncada para personas e instituciones interesadas en el movimiento educativo STEAM en México. Realizado con React, Firebase, CSS3, como parte de la serie de proeyectos en Laboratoria',
+            'Es una webapp que aplica la criptografía cecareana. Enfocado y dirigido para la enseñanza de la importancia de la seguridad digital y la criptografía en el taller Seguridad Digital para Morras, realizado en el CCD, 2019.',
             'El taller Hacklab para niñas es un taller del LCD, enfocado a invitar a más niñas a unirse al mundo de la tecnología, por lo tanto se realizó una plataforma piloto para compilar evidencias y reflexiones en el taller.'
         ],
-        linkto:['https://lawrayette.github.io/CACTACEA_EDU/index.html','https://steamreact.web.app/','https://lcd-hacklab.firebaseapp.com/'],
+        linkto:['https://kactacea.cool/','https://lawrayette.github.io/CipherCCD//','https://lcd-hacklab.firebaseapp.com/'],
         delay:[500,0,500]
 
     }
