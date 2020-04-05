@@ -9,7 +9,6 @@ class Layout extends React.Component {
         <Header />
         <div
             style = {{
-                height:'auto',
                 display:'flex',
                 justifyContent:'center',
                 alignItems:'center',
