@@ -111,12 +111,15 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @media (max-width:425px){
+        height: auto;
+    }
     #biorobots__container, #hacklab__container, #arduino__container{
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 6%;
-        @media (max-width:700px){
+        @media (max-width:769px){
             flex-direction: column;
             display: inline;
         }
@@ -128,6 +131,11 @@ body {
             padding: 2%;
         }
         h1{
+            @media (max-width:769px) {
+                width: 80%;
+                border-radius: 20px;
+                font-size: 2rem;
+            }
             background-color: #00000075;
             text-align: center;
             width: 40%;
@@ -137,6 +145,11 @@ body {
             padding: 1%;
         }
 
+    }
+    p{
+        @media (max-width:769px) {
+            font-size: 16px;
+        }   
     }
     h1, p{
         color: white;
