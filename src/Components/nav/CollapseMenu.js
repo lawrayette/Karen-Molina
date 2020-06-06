@@ -1,25 +1,28 @@
-import React from 'react';
-import styled from 'styled-components';
-import { NavLink} from 'react-router-dom'
+import React from "react";
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated } from "react-spring";
 
 const CollapseMenu = (props) => {
   const { open } = useSpring({ open: props.navbarState ? 0 : 1 });
 
   if (props.navbarState === true) {
     return (
-      <CollapseWrapper style={{
-        transform: open.interpolate({
-          range: [0, 0.2, 0.3, 1],
-          output: [0, -20, 0, -200],
-        }).interpolate(openValue => `translate3d(0, ${openValue}px, 0`),
-      }}
+      <CollapseWrapper
+        style={{
+          transform: open
+            .interpolate({
+              range: [0, 0.2, 0.3, 1],
+              output: [0, -20, 0, -200],
+            })
+            .interpolate((openValue) => `translate3d(0, ${openValue}px, 0`),
+        }}
       >
         <NavLinks>
-        <NavLink to="/hacklab">hacklab para niñas</NavLink>
-            <NavLink to="/ccd">ccd</NavLink>
-            <NavLink to="/yo-digital" >mi yo digital</NavLink>
+          <NavLink to="/hacklab">hacklab para niñas</NavLink>
+          <NavLink to="/ccd">ccd</NavLink>
+          {/* <NavLink to="/yo-digital" >mi yo digital</NavLink>*/}
         </NavLinks>
       </CollapseWrapper>
     );
@@ -56,8 +59,8 @@ const NavLinks = styled.ul`
     cursor: pointer;
 
     &:hover {
-      color: #AA1FD6;
-      border-bottom: 1px solid #AA1FD6;
+      color: #aa1fd6;
+      border-bottom: 1px solid #aa1fd6;
       transition: all 300ms linear 0s;
     }
   }
