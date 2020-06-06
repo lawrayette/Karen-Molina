@@ -1,25 +1,20 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import React from 'react'
-import Home from './Components/Views/Home'
-import BioRobots from './Components/Pages/BioRobots'
-import Arduino from './Components/Pages/Arduino'
-import Hacklab from './Components/Pages/Hacklab'
-import Post from './Components/Pages/Post'
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.scss";
+import Home from "./Views/Home";
+import Hacklab from "./Views/Hacklab"
+import CCD from "./Views/Ccd"
+import YoDigital from "./Views/YoDigital"
 
-class Routes extends React.Component {
-    render () {
-      return (
-        <Router>
-            <Switch className='container'>
-              <Route exact path='/' component={Home} />
-              <Route exact path='/biorobots' component={BioRobots} />
-              <Route exact path='/arduino' component={Arduino} />
-              <Route exact path='/hacklab' component={Hacklab} />
-              <Route exact path='/post' component={Post} />
-            </Switch>
-        </Router>
-      )
-    }
-  }
-  
-  export default Routes
+export default function App() {
+  return (
+    <Router>
+      <Switch className="container">
+        <Route exact path="/" component={Home} />
+        <Route exact path="/hacklab" component={Hacklab} />
+        <Route exact path="/ccd" component={CCD} />
+        <Route exact path="/yo-digital" component={YoDigital} />
+      </Switch>
+    </Router>
+  );
+}
