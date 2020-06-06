@@ -32,7 +32,13 @@ export default function ApaseoCopy() {
             <ProjectNumber>20</ProjectNumber>
             <Girls>niñas</Girls>
           </div>
-          <div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
             <ProyectLabel>Proyectos</ProyectLabel>
             <CallToAction>
               Visita sus proyectos, comenta, comparte, crea, remixea.

@@ -40,7 +40,7 @@ class testimony extends Component {
         <article className="">
           {this.state.dataComments.map((data) => (
             <div>
-              <P>{data.testimony}</P>
+              <P>"{data.testimony}"</P>
             </div>
           ))}
         </article>
@@ -55,7 +55,7 @@ export default testimony;
 const P = styled.p`
 font-size:20px;
 color:white;
-margin-bottom:3%;
+margin-bottom:4%;
 @media (max-width: 768px) {
     font-size:18px;
   }

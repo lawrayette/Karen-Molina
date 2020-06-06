@@ -14,7 +14,7 @@ const MyButton = (props) => {
 }
 
 const Button = styled.a`
-padding:1%;
+padding: 1% 6%;
 border-radius:25px;
 font-size:16px;
 background: rgb(55, 1, 71);
