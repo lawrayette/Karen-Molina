@@ -4,7 +4,7 @@ import range from 'lodash-es/range'
 
 
 const items = range(7)
-const interp = i => r => `translate3d(0, ${20 * Math.sin(r + (i * 2 * Math.PI) / 1.3)}px, 0)`
+const interp = i => r => `translate3d(0, ${10 * Math.sin(r + (i * 2 * Math.PI) / 1.3)}px, 0)`
 
 export default function App() {
   const { radians } = useSpring({
