@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Fade from "react-reveal/Fade";
 
 import {
   BoxContainer,
@@ -24,7 +23,6 @@ class talk extends Component {
 
   showBoxes = () =>
     this.state.positions.map((box, i) => (
-      <Fade bottom  delay={this.state.delay[i]} key={i}>
         <div>
           <BoxProject>
             <div>
@@ -33,7 +31,6 @@ class talk extends Component {
             <Description>{this.state.desc[i]}</Description>
           </BoxProject>
         </div>
-      </Fade>
     ));
 
   render() {

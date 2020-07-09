@@ -5,13 +5,13 @@ font-weight: bold;
 padding: 3% 0% 3%;
 text-transform: uppercase;
 font-size: 35px;
-color: #f7f7f7;
-background-color: rgb(55, 1, 71);
+color:rgb(55, 1, 71);
 margin: 0% 0% 5%;
 `;
 
 export const ProjectContainer = styled.div`
   background-color: #f7f7f7;
+  border-radius:20px;
   padding: 10% 0%;
   text-align: center;
 `;
@@ -33,6 +33,7 @@ export const BoxProject = styled.div`
 background:white;
 padding: 50px 20px;
 color:#8041E5;
+border-radius: 15px;
   margin: 0% 5%;
   @media (max-width: 768px) {
     margin: 5%;
