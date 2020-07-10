@@ -26,7 +26,7 @@ const Navbar = (props) => {
         <FlexContainer>
           <Brand />
           <NavLinks style={linkAnimation}>
-            <NavLink to="/hacklab">hacklab para niñas</NavLink>
+            {/*<NavLink to="/hacklab">hacklab para niñas</NavLink>*/}
             <NavLink to="/ccd">ccd</NavLink>
             <NavLink to="/yodigital" >mi yo digital</NavLink>
           </NavLinks>

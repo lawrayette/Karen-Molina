@@ -11,7 +11,6 @@ margin: 0% 0% 5%;
 
 export const ProjectContainer = styled.div`
   background-color: #f7f7f7;
-  border-radius:20px;
   padding: 10% 0%;
   text-align: center;
 `;

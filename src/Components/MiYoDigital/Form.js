@@ -19,7 +19,7 @@ export default class Form extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     const db = Firebase.firestore();
-    db.collection("letter").add({
+    db.collection("internetsecure").add({
       letter: this.state.letter,
     });
     this.setState({
@@ -27,11 +27,13 @@ export default class Form extends Component {
     });
   };
   render() {
+    const { letter } = this.state;
+    const enabled = letter.length > 0;
     return (
       <div className="container">
         <Div className="">
           <Text
-            placeholder="Carta a mi yo del pasado"
+            placeholder="¿Por qué es importante cuidarte cuando navegas en Internet?"
             rows="20"
             cols="110"
             type="letter"
@@ -40,7 +42,7 @@ export default class Form extends Component {
             value={this.state.letter}
           />
 
-          <Button onClick={this.onSubmit}>Enviar</Button>
+          <Button disabled={!enabled}  onClick={this.onSubmit}>Enviar</Button>
         </Div>
       </div>
     );

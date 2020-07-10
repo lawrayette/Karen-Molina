@@ -20,7 +20,7 @@ const CollapseMenu = (props) => {
         }}
       >
         <NavLinks>
-          <NavLink to="/hacklab">hacklab para niñas</NavLink>
+          {/*<NavLink to="/hacklab">hacklab para niñas</NavLink>*/}
           <NavLink to="/ccd">ccd</NavLink>
           <NavLink to="/yo-digital" >mi yo digital</NavLink>
         </NavLinks>
