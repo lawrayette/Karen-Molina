@@ -13,7 +13,7 @@ export default function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/hacklab" component={Hacklab} />
         <Route exact path="/ccd" component={CCD} />
-        <Route exact path="/yo-digital" component={YoDigital} />
+        <Route exact path="/yodigital" component={YoDigital} />
       </Switch>
     </Router>
   );
