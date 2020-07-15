@@ -1,11 +1,16 @@
 import React from "react";
 import Layout from "../Components/Layout";
-import Form from "../Components/YoDigital";
+import Internet from "../Components/MiYoDigital/internetSecure";
+import Letter from "../Components/MiYoDigital/Letter";
+import Myrules from "../Components/MiYoDigital/MyInternet";
+
 
 export default function Hacklab() {
   return (
     <Layout>
-      <Form />
+      <Myrules />
+      <Letter />
+      <Internet />
     </Layout>
   );
 }
