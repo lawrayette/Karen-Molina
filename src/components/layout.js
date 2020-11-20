@@ -19,12 +19,12 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 1280,
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `2%`,
         }}
       >
         <main
           style={{
-            minHeight: "90vh",
+            minHeight: "100vh",
           }}
         >
           {children}

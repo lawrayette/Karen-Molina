@@ -56,7 +56,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-  filter: drop-shadow(2px 4px 6px black);
+  filter: drop-shadow(2px 4px 6px #58b5e1);
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
@@ -266,6 +266,7 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
+  color:#58b5e1;
 }
 h3 {
   margin-left: 0;

@@ -69,7 +69,7 @@ const Hamburger = styled.div`
   ::after {
     width: 30px;
     height: 3px;
-    background-color: #111;
+    background-color: #58b5dc;
     content: "";
     position: absolute;
     transition: all 0.3s linear;

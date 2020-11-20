@@ -45,7 +45,7 @@ class talk extends React.Component {
     return (
       <div style={{ background: "#feedf9" }}>
         <Layout>
-          <SEO title="Void Rizoma" />
+          <SEO title="workshops()" />
           <Container
             style={{
               display: "flex",
@@ -68,9 +68,9 @@ class talk extends React.Component {
       >
         <h2> Let's talk!</h2>
         <div style={{width:"40%", margin:"0 auto", display:"flex", justifyContent:"space-around"}}>
-        <a href="https://github.com/voidrizoma"><img src="https://www.flaticon.es/svg/static/icons/svg/2111/2111432.svg"  width="40px" /></a> 
-       <a href="https://www.linkedin.com/in/karen-molinac/"><img src="https://www.flaticon.es/svg/static/icons/svg/1384/1384030.svg" width="40px" /></a> 
-        <a href="mailto:karenemece@gmail.com"><img src="https://www.flaticon.es/svg/static/icons/svg/646/646094.svg"  width="40px"/></a>
+        <a href="https://github.com/voidrizoma"><img src="https://www.flaticon.es/svg/static/icons/svg/2111/2111432.svg"  width="40px" alt="contact"/></a> 
+       <a href="https://www.linkedin.com/in/karen-molinac/"><img src="https://www.flaticon.es/svg/static/icons/svg/1384/1384030.svg" width="40px" alt="contact"/></a> 
+        <a href="mailto:karenemece@gmail.com"><img src="https://www.flaticon.es/svg/static/icons/svg/646/646094.svg"  width="40px" alt="contact"/></a>
         </div>
 
       </div>

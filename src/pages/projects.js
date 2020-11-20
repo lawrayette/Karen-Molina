@@ -2,6 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import Freely from "../images/freely.png"
+import MS from "../images/ms.png"
+import Spec from "../images/specChain.png"
 
 const Container = styled.div`
   display: flex;
@@ -13,31 +16,19 @@ const Container = styled.div`
   }
 `
 
-const Paragraph = styled.p`
-  font-size: 22px;
-
-  @media (max-width: 768px) {
-    font-size: 18px;
-  }
-`
-
 class talk extends React.Component {
   state = {
     prices: [100, 150, 250],
-    positions: ["DevHr", "Eventloop", "Edusol"],
-    desc: [
-      'Participé como ponente en el DevHr, el foro internacional del juego, con el tema: "Cuerpo expandido, el videojuego como prótesis."   Realizado en el 2018 en las instaalciones de la UAM-Azcapotzalco.',
-      'En agosto del 2018 participé en EventLoop en una charla sobre "E-cuerpo", una reflexión sobre la relación del estudio de interfaces desde las ciencias sociales y el desarrollo de interfaces desde el UX hasta su implementación.',
-      "En el Encuentro de Educación, Software y Cultura Libre, hablé sobre mi experiencia en el desarrollo e implementación de talleres  con tecnologías y pedagogías libres en espacios de educación formal y no formal. ",
-    ],
-    delay: [500, 0, 500],
+    positions: ["Freely",  "MS Connect", "SpecChain"],
+    pages:["https://talkfreely.io/", "https://beta.msconnect.io/", "https://specchain.io/"],
+    desc: [Freely, MS, Spec],
   }
 
   showBoxes = () =>
     this.state.positions.map((box, i) => (
       <div>
-        <h2>{this.state.positions[i]}</h2>
-        <div>{this.state.desc[i]}</div>
+        <a href={this.state.pages[i]} style={{fontSize:"26px", color:"#58b5e1"}}>{this.state.positions[i]}</a>
+        <img src={this.state.desc[i]} style={{margin:"25px auto"}} alt={this.state.positions[i]}/>
       </div>
     ))
 
@@ -45,35 +36,65 @@ class talk extends React.Component {
     return (
       <div style={{ background: "#feedf9" }}>
         <Layout>
-          <SEO title="Void Rizoma" />
+          <SEO title="projects()" />
           <Container
             style={{
               display: "flex",
-              flexDirection: "column-reverse",
+              flexDirection: "column",
               alignItems: "center",
               minHeight: "75vh",
               width: "80%",
               margin: "0 auto",
             }}
           >
+            <p style={{fontSize:"18px"}}>
+              My first job as developer was in King Tide. KT is a digital agency
+              based in L.A. and Mexico City. When I worked in KT, I was involved
+              in approximately 20 projects. Some of those projects I had the
+              responsibility of deciding the development stack. Some projects that I has envolved:
+            </p>
             {this.showBoxes()}
           </Container>
           <div
-        style={{
-          margin: "2% auto",
-          textAlign: "center",
-          padding: "2%",
-          color: "#000",
-        }}
-      >
-        <h2> Let's talk!</h2>
-        <div style={{width:"40%", margin:"0 auto", display:"flex", justifyContent:"space-around"}}>
-        <a href="https://github.com/voidrizoma"><img src="https://www.flaticon.es/svg/static/icons/svg/2111/2111432.svg"  width="40px" /></a> 
-       <a href="https://www.linkedin.com/in/karen-molinac/"><img src="https://www.flaticon.es/svg/static/icons/svg/1384/1384030.svg" width="40px" /></a> 
-        <a href="mailto:karenemece@gmail.com"><img src="https://www.flaticon.es/svg/static/icons/svg/646/646094.svg"  width="40px"/></a>
-        </div>
-
-      </div>
+            style={{
+              margin: "2% auto",
+              textAlign: "center",
+              padding: "2%",
+              color: "#000",
+            }}
+          >
+            <h2> Let's talk!</h2>
+            <div
+              style={{
+                width: "40%",
+                margin: "0 auto",
+                display: "flex",
+                justifyContent: "space-around",
+              }}
+            >
+              <a href="https://github.com/voidrizoma">
+                <img
+                  src="https://www.flaticon.es/svg/static/icons/svg/2111/2111432.svg"
+                  width="40px"
+                  alt="contact"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/karen-molinac/">
+                <img
+                  src="https://www.flaticon.es/svg/static/icons/svg/1384/1384030.svg"
+                  width="40px"
+                  alt="contact"
+                />
+              </a>
+              <a href="mailto:karenemece@gmail.com">
+                <img
+                  src="https://www.flaticon.es/svg/static/icons/svg/646/646094.svg"
+                  width="40px"
+                  alt="contact"
+                />
+              </a>
+            </div>
+          </div>
         </Layout>
       </div>
     )

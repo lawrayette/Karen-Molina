@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from "../components/foto.jpg"
+import Image from "../images/foto.png"
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -16,32 +16,38 @@ const Container = styled.div`
 
 const Paragraph = styled.p`
   font-size: 22px;
+  color:white;
 
   @media (max-width: 768px) {
     font-size: 18px;
   }
 `
 
+const Boxes = styled.div`
+width: 50%;
+justify-content: center;
+align-items: center;
+margin: 2%;
+padding:1%;
+
+@media (max-width: 768px) {
+  width: 80%;
+}
+`
+
 const IndexPage = () => (
   <div style={{ background: "#7a055b" }}>
     <Layout>
-      <SEO title="Void Rizoma" />
+      <SEO title="aboutMe()" />
       <Container>
-        <article
-          style={{
-            width: "50%",
-            color: "white",
-            borderRadius: "10px 20px 30px 60px",
-            padding:"1%",
-            margin:"4% auto"
-          }}
-        >
+        <Boxes>
           <div
             style={{
               justifyContent: "center",
               alignItems: "center",
               textAlign: "center",
-              padding:"1%"
+              padding: "1%",
+              color:"white",
             }}
           >
             <h1>Hi, my name is Karen Molina</h1>
@@ -52,7 +58,7 @@ const IndexPage = () => (
               justifyContent: "center",
               alignItems: "center",
               textAlign: "center",
-              padding:"1%"
+              padding: "1%",
             }}
           >
             <Paragraph>
@@ -76,42 +82,60 @@ const IndexPage = () => (
               Fintech Startup.
             </Paragraph>
           </div>
-        </article>
-        <article
-          style={{
-            width: "50%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            margin: "4%",
-            padding:"4%"
-          }}
-        >
+        </Boxes>
+        <Boxes>
           <img
             src={Image}
             style={{
-              borderRadius: "25% 5%",
-              filter: "opacity(0.5)",
-              border: "8px solid #bca092",
+              borderRadius: "25% 10%",
+              border: "8px solid transparent",
+
             }}
+            alt="voidRizoma"
           />
-        </article>
+        </Boxes>
       </Container>
       <div
         style={{
           margin: "2% auto",
           textAlign: "center",
-          padding: "2%",
-          color: "#000",
+          color: "#58b5e1",
         }}
       >
         <h2> Let's talk!</h2>
-        <div style={{width:"40%", margin:"0 auto", display:"flex", justifyContent:"space-around"}}>
-        <a href="https://github.com/voidrizoma"><img src="https://www.flaticon.es/svg/static/icons/svg/2111/2111432.svg"  width="40px" /></a> 
-       <a href="https://www.linkedin.com/in/karen-molinac/"><img src="https://www.flaticon.es/svg/static/icons/svg/1384/1384030.svg" width="40px" /></a> 
-        <a href="mailto:karenemece@gmail.com"><img src="https://www.flaticon.es/svg/static/icons/svg/646/646094.svg"  width="40px"/></a>
+        <div
+          style={{
+            width: "40%",
+            margin: "0 auto",
+            display: "flex",
+            justifyContent: "space-around",
+          }}
+        >
+          <a href="https://github.com/voidrizoma">
+            <img
+              src="https://www.flaticon.es/svg/static/icons/svg/2111/2111432.svg"
+              width="40px"
+              style={{filter: "invert(1)",}}
+              alt="contact"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/karen-molinac/">
+            <img
+              src="https://www.flaticon.es/svg/static/icons/svg/1384/1384030.svg"
+              width="40px"
+              style={{filter: "invert(1)",}}
+              alt="contact"
+            />
+          </a>
+          <a href="mailto:karenemece@gmail.com">
+            <img
+              src="https://www.flaticon.es/svg/static/icons/svg/646/646094.svg"
+              width="40px"
+              style={{filter: "invert(1)",}}
+              alt="contact"
+            />
+          </a>
         </div>
-
       </div>
     </Layout>
   </div>
