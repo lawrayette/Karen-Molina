@@ -6,12 +6,12 @@ const Footer= styled.nav`
   display: flex;
   background-color: #282c3d;
   position: relative;
-  text-transform: uppercase;
   margin: 0 auto;
   padding: 0 5vw;
   z-index: 2;
   width:100%;
   align-self: center;
+  border-top: 2px solid #33333320;
 
   @media (max-width: 768px) {
     position: sticky;
@@ -40,7 +40,7 @@ export default function footer() {
           style={{
             display:"flex",
             justifyContent:"space-around",
-            marginTop:"20px"
+            marginTop:"10px"
           }}
         >
           <a href="https://github.com/voidrizoma">

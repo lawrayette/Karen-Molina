@@ -30,6 +30,8 @@ const Name = styled.h1`
   font-family: 'Rubik', sans-serif;
   @media (max-width: 768px) {
     font-size: 26px;
+    padding:0;
+    margin:0;
   }
 `;
 
@@ -42,6 +44,8 @@ const FE = styled.h2`
 
   @media (max-width: 768px) {
     font-size: 22px;
+    padding:0;
+    margin:0;
   }
 `;
 
