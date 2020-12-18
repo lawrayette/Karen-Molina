@@ -37,7 +37,7 @@ class talk extends React.Component {
   showBoxes = () =>
     this.state.positions.map((box, i) => (
       <div>
-        <h2 style={{color:"#4de4cf", marginBottom:"15px"}}>{this.state.positions[i]}</h2>
+        <h2 style={{color:"#8a6df1", marginBottom:"15px"}}>{this.state.positions[i]}</h2>
         <Paragraph>{this.state.desc[i]}</Paragraph>
       </div>
     ));
