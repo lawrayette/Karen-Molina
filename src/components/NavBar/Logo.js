@@ -1,17 +1,19 @@
-// Logo.js
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  color: white;
+  color: #282c3d;
+  font-weight: bold;
   display: inline-block;
   white-space: nowrap;
-  margin:2%;
-  font-size:24px;
+  margin: 0 1vw;
+  font-size:18px;
   transition: all 200ms ease-in;
   position: relative;
+  display: flex;
+  align-items: center;
 
   :after {
     position: absolute;
@@ -21,13 +23,13 @@ const NavItem = styled(Link)`
     width: 0%;
     content: ".";
     color: transparent;
-    background: white;
+    background: #efefef;
     height: 1px;
     transition: all 0.4s ease-in;
   }
 
   :hover {
-    color: white;
+    color: #efefef;
     ::after {
       width: 100%;
     }

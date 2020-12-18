@@ -3,12 +3,14 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const NavItem = styled(Link)`
+display: flex;
+    justify-content: center;
+    align-items: center;
   text-decoration: none;
-  color: #fff;
-  display: inline-block;
+  color: #282c3d;
+  font-weight: bold;
   white-space: nowrap;
   margin: 0 1vw;
-  font-size:18px;
   transition: all 200ms ease-in;
   position: relative;
 
@@ -20,13 +22,13 @@ const NavItem = styled(Link)`
     width: 0%;
     content: ".";
     color: transparent;
-    background: white;
+    background: #cccccc;
     height: 1px;
     transition: all 0.4s ease-in;
   }
 
   :hover {
-    color: white;
+    color: #cccccc;
     ::after {
       width: 100%;
     }
@@ -41,9 +43,9 @@ const NavItem = styled(Link)`
 const NavbarLinks = () => {
   return (
     <>
-      <NavItem to="/talks">Talks</NavItem>
-      <NavItem to="/workshops">Workshops</NavItem>
       <NavItem to="/projects">Projects</NavItem>
+      <NavItem to="/workshops">Workshops</NavItem>
+      <NavItem to="/talks">Talks</NavItem>
     </>
   )
 }

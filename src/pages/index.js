@@ -1,66 +1,114 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Image from "../images/foto.png"
-import styled from "styled-components"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Image from "../images/foto.png";
+import styled from "styled-components";
 
 const Container = styled.div`
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
 
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
-`
+`;
 
 const Paragraph = styled.p`
   font-size: 22px;
-  color:white;
+  color: #282c3d;
 
   @media (max-width: 768px) {
     font-size: 18px;
   }
-`
+`;
 
-const Boxes = styled.div`
-width: 50%;
-justify-content: center;
-align-items: center;
-margin: 2%;
-padding:1%;
+const Name = styled.h1`
+  font-size: 55px;
+  color: #282c3d;
+  padding:20px;
+  margin:20px;
+  font-family: 'Rubik', sans-serif;
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+`;
 
-@media (max-width: 768px) {
+const FE = styled.h2`
+  font-size: 25px;
+  color: #8a6df1;
+  padding:20px;
+  margin:20px;
+  font-family: 'Montserrat', sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
+`;
+
+const ImageContainer = styled.div`
   width: 80%;
-}
-`
+  display: inline;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+const HeaderContainer = styled.div`
+  width: 85%;
+  display: flex;
+  align-items:center;
+  margin: 5% auto;
+  padding: 1%;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    margin: auto;
+    margin-bottom:50px;
+  }
+`;
+const Boxes = styled.div`
+  width: 85%;
+  display: flex;
+  margin: 5% auto;
+  padding: 1%;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+`;
 
 const IndexPage = () => (
-  <div style={{ background: "#7a055b" }}>
+  <div
+    style={{
+      backgroundColor: "#efefef",
+      backgroundImage:
+        "-webkit-linear-gradient(290deg, #efefef 45%, #8a6df1 45%",
+      minHeight: "90vh",
+    }}
+  >
     <Layout>
       <SEO title="aboutMe()" />
       <Container>
-        <Boxes>
+        <HeaderContainer>
           <div
             style={{
-              justifyContent: "center",
-              alignItems: "center",
-              textAlign: "center",
-              padding: "1%",
-              color:"white",
+              textAlign: "left",
+              color: "#4de4cf",
             }}
           >
-            <h1>Hi, my name is Karen Molina</h1>
+            <Name>Hi, my name is Karen Molina</Name>
+            <FE>I'm Frontend Developer</FE>
           </div>
+          <ImageContainer>
+            <img
+              src={Image}
+              alt="voidRizoma"
+              style={{ borderRadius: "33% 80%"}}
 
-          <div
-            style={{
-              justifyContent: "center",
-              alignItems: "center",
-              textAlign: "center",
-              padding: "1%",
-            }}
-          >
+            />
+          </ImageContainer>
+        </HeaderContainer>
+        <Boxes>
+          <div>
             <Paragraph>
               I was born and rised in Mexico since I was a child, I remember
               being into science. I used to want to be a biologist, so I studied
@@ -83,62 +131,9 @@ const IndexPage = () => (
             </Paragraph>
           </div>
         </Boxes>
-        <Boxes>
-          <img
-            src={Image}
-            style={{
-              borderRadius: "25% 10%",
-              border: "8px solid transparent",
-
-            }}
-            alt="voidRizoma"
-          />
-        </Boxes>
       </Container>
-      <div
-        style={{
-          margin: "2% auto",
-          textAlign: "center",
-          color: "#58b5e1",
-        }}
-      >
-        <h2> Let's talk!</h2>
-        <div
-          style={{
-            width: "40%",
-            margin: "0 auto",
-            display: "flex",
-            justifyContent: "space-around",
-          }}
-        >
-          <a href="https://github.com/voidrizoma">
-            <img
-              src="https://www.flaticon.es/svg/static/icons/svg/2111/2111432.svg"
-              width="40px"
-              style={{filter: "invert(1)",}}
-              alt="contact"
-            />
-          </a>
-          <a href="https://www.linkedin.com/in/karen-molinac/">
-            <img
-              src="https://www.flaticon.es/svg/static/icons/svg/1384/1384030.svg"
-              width="40px"
-              style={{filter: "invert(1)",}}
-              alt="contact"
-            />
-          </a>
-          <a href="mailto:karenemece@gmail.com">
-            <img
-              src="https://www.flaticon.es/svg/static/icons/svg/646/646094.svg"
-              width="40px"
-              style={{filter: "invert(1)",}}
-              alt="contact"
-            />
-          </a>
-        </div>
-      </div>
     </Layout>
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;
