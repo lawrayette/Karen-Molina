@@ -22,13 +22,13 @@ display: flex;
     width: 0%;
     content: ".";
     color: transparent;
-    background: #cccccc;
+    background: #6a4e98;
     height: 1px;
     transition: all 0.4s ease-in;
   }
 
   :hover {
-    color: #cccccc;
+    color: #6a4e98;
     ::after {
       width: 100%;
     }

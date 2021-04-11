@@ -1,35 +1,32 @@
+const resolveConfig = require("tailwindcss/resolveConfig")
+const tailwindConfig = require("./tailwind.config.js")
+
+const { theme } = resolveConfig(tailwindConfig)
+
 module.exports = {
   siteMetadata: {
-    title: `def voidRizoma():`,
-    description: `Void Rizoma`,
-    author: `@voidrizoma`,
+    title: "def voidRizoma():",
+    author: "@voidrizoma",
+    description: "Void Rizoma",
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`,
+    "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: "Gatsby Starter Tailwind CSS",
+        short_name: "Gatsby Starter Tailwind CSS",
+        start_url: "/",
+        background_color: theme.colors.white,
+        theme_color: theme.colors.teal[500],
+        icon: "static/icon.svg",
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-postcss",
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/foto.png`, // This path is relative to the root of the site.
+        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
