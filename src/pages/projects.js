@@ -37,9 +37,9 @@ export default () => {
   return (
     <Layout>
       <main className="max-w-4xl flex-grow mx-auto flex flex-col py-8">
-        <h1 className="text-2xl text-center text-teal-500 font-bold sm:text-3xl">
+        <h3 className="sm:text-3xl">
           Projects
-        </h1>
+        </h3>
         <p className="p-8 mx-8">
           My first job as developer was in King Tide. KT is a digital agency
           based in L.A. and Mexico City. When I worked in KT, I was involved in

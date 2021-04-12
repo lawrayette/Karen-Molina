@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply ;
+      }
+      h2 {
+        @apply px-4 pt-5 text-2xl text-left text-purple-700 font-bold;
+      }
+      h3 {
+          @apply text-2xl text-center text-teal-500 font-bold;
+      }
+
+      p{
+          @apply px-4 mt-8 text-lg text-gray-700;
+      }
+}

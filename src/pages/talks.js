@@ -15,9 +15,9 @@ export default () => {
     data.names.map((box, i) => (
       <div className="sm:flex sm:flex-row-reverse p-4 sm:items-center">
         <div className="sm:px-2 mx-auto">
-          <h1 className="px-4 pt-5 text-2xl text-center text-teal-500 font-bold sm:text-3xl">
+          <h3>
             {data.names[i]}
-          </h1>
+          </h3>
         </div>
         <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8 md:w-3/5">
           {data.pages[i]}
@@ -28,9 +28,9 @@ export default () => {
   return (
     <Layout>
       <main className="max-w-4xl flex-grow mx-auto flex flex-col py-8">
-        <h1 className="text-2xl text-center text-teal-500 font-bold sm:text-3xl">
+        <h3 className="sm:text-3xl">
           Talks
-        </h1>
+        </h3>
         <p className="p-8 mx-8">
 
         </p>

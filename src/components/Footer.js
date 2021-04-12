@@ -29,8 +29,7 @@ export default function Footer() {
       </div>
       <hr className="border-3 border-purple-700"/>
       <code className="text-gray-600 text-xs leading-xl">
-        Built with <span className="text-red-400 text-2xl" role="img" aria-label="heart">❤️</span> by Karen Molina
-      </code>
+        Built with harto <span className="text-red-400 text-2xl" role="img" aria-label="heart">❤️</span> </code>
     </section>
   )
 }

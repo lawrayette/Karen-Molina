@@ -11,10 +11,10 @@ export default () => {
             <h1 className="px-4 pt-5 text-3xl text-left text-teal-500 font-bold sm:text-4xl">
               Hi, my name is Karen Molina
             </h1>
-            <h1 className="px-4 pt-5 text-2xl text-left text-purple-700 font-bold sm:text-3xl">
+            <h2 className="sm:text-3xl">
               I'm Frontend Developer
-            </h1>
-            <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
+            </h2>
+            <p className="sm:mt-8">
               I was born and rised in Mexico since I was a child, I remember
               being into science. I used to want to be a biologist, so I studied
               biology at UNAM. But when I was study biology, I discovered a lot
