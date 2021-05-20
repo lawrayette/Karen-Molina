@@ -25,7 +25,7 @@ export default () => {
               it. Then I discovered many FS communities and realized that many
               of the contributors where engineering students or graduated
               engineers. It was there when I started to leadn about coding. My
-              first approach wa wirh Arduino, since there, I'm really into
+              first approach wa with Arduino, since there, I'm really into
               digital cultural issues. I'm teacher on many workshops STEAM that
               I develop. I'm a contributor to many foundations, schools, and
               organizations. Since 2018 I'm a web developer. Currently, I'm a
