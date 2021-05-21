@@ -3,8 +3,8 @@ import { Link } from "gatsby";
 
 const PostLink = ({ post }) => (
   <div className="w-3/5 flex-grow mx-auto flex flex-col m-8">
-    <div className="sm:flex sm:flex-row-reverse p-4 sm:items-center">
-      <div className="sm:px-2 mx-auto text-center">
+    <div className="sm:flex sm:items-center">
+      <div className="sm:px-2 mx-auto text-center md:w-3/5 lg:w-1/2">
         <h2 className="px-4 mt-8 text-lg text-center text-teal-700 sm:mt-8 text-2xl ">
           {" "}
           {post.frontmatter.title}
@@ -16,7 +16,7 @@ const PostLink = ({ post }) => (
         </Link>
       </div>
       <img
-        className="mb-16 mt-4 mx-auto p-4 sm:w-full sm:mt-10 md:w-3/5 lg:w-3/5"
+        className="mb-16 mt-4 mx-auto p-4 sm:w-full sm:mt-10 md:w-3/5 lg:w-1/2"
         src={post.frontmatter.img}
         alt="imagen"
       />
