@@ -16,4 +16,10 @@
       p{
           @apply px-4 mt-8 text-lg text-gray-700;
       }
+
+      pre {
+        background: #252525;
+    color: #d0d0d0;
+    padding: 3%;
+      }
 }
