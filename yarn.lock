@@ -939,10 +939,10 @@
     "core-js-pure" "^3.0.0"
     "regenerator-runtime" "^0.13.4"
 
-"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
-  "integrity" "sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw=="
-  "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.13.10.tgz"
-  "version" "7.13.10"
+"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.6", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+  "integrity" "sha512-twj3L8Og5SaCRCErB4x4ajbvBIVV77CGeFglHpeg5WC5FF8TZzBWXtTJ4MqaD9QszLYTtr+IsaAL2rEUevb+eg=="
+  "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.14.8.tgz"
+  "version" "7.14.8"
   dependencies:
     "regenerator-runtime" "^0.13.4"
 
@@ -6275,6 +6275,14 @@
     "lodash" "^4.17.20"
     "micromatch" "^4.0.2"
 
+"gatsby-plugin-google-tagmanager@^3.10.0":
+  "integrity" "sha512-/baf4jOQb7xOdsw72vUUKxLIAhjlkf8H6tBHpxOTCZ3Zfw79C1ItjTKxabT9RZBc8VokGmBVu4gdLpQ9gW80kQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-3.10.0.tgz"
+  "version" "3.10.0"
+  dependencies:
+    "@babel/runtime" "^7.14.6"
+    "web-vitals" "^1.1.2"
+
 "gatsby-plugin-manifest@^2.4.1":
   "integrity" "sha512-Kiom3IHQ+hsRA/yt+XcBdOn1q+Rqbso5Iw0mXQQg+F+8U23sU66NaJY67ZXUkW8iwU25SOrwZaSw49C8BV0EGw=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.12.1.tgz"
@@ -6511,7 +6519,7 @@
     "semver" "^7.3.4"
     "sharp" "^0.27.0"
 
-"gatsby@^2.0.0", "gatsby@^2.12.0", "gatsby@^2.12.1", "gatsby@^2.2.0", "gatsby@^2.21.0", "gatsby@^2.24.79", "gatsby@^2.25.0", "gatsby@>2.0.15":
+"gatsby@^2.0.0", "gatsby@^2.12.0", "gatsby@^2.12.1", "gatsby@^2.2.0", "gatsby@^2.21.0", "gatsby@^2.24.79", "gatsby@^2.25.0", "gatsby@^3.0.0-next.0", "gatsby@>2.0.15":
   "integrity" "sha512-CfaNIIoKbBVD+4Sao+PDnxc3nN02M//Jh8cK2rLqRtzFZ09dboUOmjsRW79gf4/zc4CV1gMV59TVrYfKolU5bA=="
   "resolved" "https://registry.npmjs.org/gatsby/-/gatsby-2.32.12.tgz"
   "version" "2.32.12"
@@ -11512,7 +11520,7 @@
     "strip-ansi" "3.0.1"
     "text-table" "0.2.0"
 
-"react-dom@^15.0.0 || ^16.0.0 || ^17.0.0 ", "react-dom@^16.13.1", "react-dom@^16.4.2 || ^17.0.0", "react-dom@>= 16.8.0", "react-dom@15.x || 16.x || 16.4.0-alpha.0911da3":
+"react-dom@^15.0.0 || ^16.0.0 || ^17.0.0 ", "react-dom@^16.13.1", "react-dom@^16.4.2 || ^17.0.0", "react-dom@^16.9.0 || ^17.0.0", "react-dom@>= 16.8.0", "react-dom@15.x || 16.x || 16.4.0-alpha.0911da3":
   "integrity" "sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz"
   "version" "16.14.0"
@@ -11576,7 +11584,7 @@
   "resolved" "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.1.tgz"
   "version" "2.1.1"
 
-"react@^0.14.0 || ^15.0.0 || ^16.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0 ", "react@^16.13.1", "react@^16.14.0", "react@^16.3.0 || ^17.0.0", "react@^16.4.2 || ^17.0.0", "react@>= 16.8.0", "react@>=16.3.0", "react@15.x || 16.x || 16.4.0-alpha.0911da3":
+"react@^0.14.0 || ^15.0.0 || ^16.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0 ", "react@^16.13.1", "react@^16.14.0", "react@^16.3.0 || ^17.0.0", "react@^16.4.2 || ^17.0.0", "react@^16.9.0 || ^17.0.0", "react@>= 16.8.0", "react@>=16.3.0", "react@15.x || 16.x || 16.4.0-alpha.0911da3":
   "integrity" "sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.14.0.tgz"
   "version" "16.14.0"
@@ -14429,6 +14437,11 @@
   "integrity" "sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw=="
   "resolved" "https://registry.npmjs.org/web-namespaces/-/web-namespaces-1.1.4.tgz"
   "version" "1.1.4"
+
+"web-vitals@^1.1.2":
+  "integrity" "sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig=="
+  "resolved" "https://registry.npmjs.org/web-vitals/-/web-vitals-1.1.2.tgz"
+  "version" "1.1.2"
 
 "webpack-dev-middleware@^3.7.2":
   "integrity" "sha512-djelc/zGiz9nZj/U7PTBi2ViorGJXEWo/3ltkPbDyxCXhhEXkW0ce99falaok4TPj+AsxLiXJR0EBOb0zh9fKQ=="

@@ -1,14 +1,14 @@
 import React, { useState } from "react"
-import styled from "styled-components"
 import NavbarLinks from "./Links"
 import Logo from "./Logo"
+import styled from 'styled-components'
 
 const Navigation = styled.nav`
   height: 10vh;
   display: flex;
-  background-color: #fff;
+  background-color: #f7f7f9;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-between;
   text-transform: uppercase;
   border-bottom: 2px solid #33333320;
   margin: 0 auto;
@@ -18,7 +18,6 @@ const Navigation = styled.nav`
 
   @media (max-width: 768px) {
     position: sticky;
-    justify-content: space-between;
     height: 8vh;
     top: 0;
     left: 0;
@@ -50,7 +49,7 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: #6b46c1;
+    background-color: #f7f7f9;
     transition: all 0.3s ease-in;
     top: 8vh;
     left: ${props => (props.open ? "-100%" : "0")};
@@ -58,10 +57,10 @@ const Navbox = styled.div`
 `
 
 const Hamburger = styled.div`
-  background-color: #6b46c1;
+  background-color: #5642c1;
   width: 30px;
   height: 3px;
-  transition: all 0.3s linear;
+  transition: all .3s linear;
   align-self: center;
   position: relative;
   transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
@@ -70,7 +69,7 @@ const Hamburger = styled.div`
   ::after {
     width: 30px;
     height: 3px;
-    background-color: #111;
+    background-color: #5642c1;
     content: "";
     position: absolute;
     transition: all 0.3s linear;
@@ -88,6 +87,7 @@ const Hamburger = styled.div`
     top: 10px;
   }
 `
+
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 

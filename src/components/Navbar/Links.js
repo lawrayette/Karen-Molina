@@ -3,12 +3,9 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const NavItem = styled(Link)`
-display: flex;
-    justify-content: center;
-    align-items: center;
   text-decoration: none;
-  color: #282c3d;
-  font-weight: bold;
+  color: #5642c1;
+  display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;
   transition: all 200ms ease-in;
@@ -22,13 +19,14 @@ display: flex;
     width: 0%;
     content: ".";
     color: transparent;
-    background: #6a4e98;
+    background: #5642c1;
     height: 1px;
     transition: all 0.4s ease-in;
   }
 
   :hover {
-    color: #6a4e98;
+    color: #5642c1;
+    font-weight:800;
     ::after {
       width: 100%;
     }
@@ -43,10 +41,10 @@ display: flex;
 const NavbarLinks = () => {
   return (
     <>
-      <NavItem to="/projects">Projects</NavItem>
-      <NavItem to="/workshops">Workshops</NavItem>
-      <NavItem to="/talks">Talks</NavItem>
-      <NavItem to="/blog">Blog</NavItem>
+      <NavItem to="#name">About</NavItem>
+      <NavItem to="/404">Services</NavItem>
+      <NavItem to="/">Gallery</NavItem>
+      <NavItem to="/404">Contact</NavItem>
     </>
   )
 }

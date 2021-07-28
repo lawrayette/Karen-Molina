@@ -6,7 +6,7 @@ export default () => {
   return (
     <Layout>
       <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
-        <div className="sm:flex sm:flex-row-reverse sm:items-center dm">
+        <div id="me" className="sm:flex sm:flex-row-reverse sm:items-center dm">
           <div className="sm:px-2">
             <h1 className="px-4 pt-5 text-3xl text-left text-teal-500 font-bold sm:text-4xl">
               Hi, my name is Karen Molina
@@ -14,7 +14,7 @@ export default () => {
             <h2 className="sm:text-3xl">
               I'm Frontend Developer
             </h2>
-            <p className="sm:mt-8">
+            <p className="sm:mt-8" id="name">
               I was born and rised in Mexico since I was a child, I remember
               being into science. I used to want to be a biologist, so I studied
               biology at UNAM. But when I was study biology, I discovered a lot
