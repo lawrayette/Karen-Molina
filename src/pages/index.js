@@ -47,10 +47,10 @@ const IndexPage = () => {
         <Layout>
             <MainContainer>
                 <section>
-                    <h1>I'm Karen</h1>
+                    <h1>Karen Molina</h1>
                 </section>
                 <section>
-                    <h3>Frontend developer 👩‍💻</h3>
+                    <h3>Frontend developer <span role="img" aria-label="woman">👩‍💻</span></h3>
                 </section>
 
             </MainContainer>

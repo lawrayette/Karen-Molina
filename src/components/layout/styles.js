@@ -249,10 +249,11 @@ export const Global = createGlobalStyle`
       margin-bottom: 1.45rem;
       color: inherit;
       font-weight: bold;
+      font-size: 28px;
       text-rendering: optimizeLegibility;
       font-size: 1.38316rem;
       line-height: 1.1;
-      color:white;
+      color:#a6034e;
     }
     h4 {
       margin-left: 0;

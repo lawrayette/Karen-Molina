@@ -38,8 +38,8 @@ const NavItem = styled(Link)`
 
 export default ({ desktop }) => (
 	<Wrapper desktop={desktop}>
-    <NavItem to="/about">About Me</NavItem>
-    <NavItem to="/">Github</NavItem>
-    <NavItem to="/">dev.to</NavItem>
+   {/*<NavItem to="/about">About Me</NavItem>*/} 
+    <NavItem to="https://github.com/voidrizoma">Github</NavItem>
+    <NavItem to="https://dev.to/voidrizoma">dev.to</NavItem>
 	</Wrapper>
 )

@@ -3,9 +3,9 @@ import Container from "../container";
 
 export default () => (
   <div style={{ color: "#ff1361" }}>
-    <Container>
+    <Container  style={{marginBottom: "10px"}}>
       <span>
-        {new Date().getFullYear()} | Built with harto{" "}
+        {new Date().getFullYear()} | Built with mucho{" "}
         <span aria-label="love" role="img">
           💖
         </span>{" "}
