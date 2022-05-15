@@ -21,27 +21,27 @@
           }
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
           "options": {
-            "cacheDir": "/Users/voidrizoma/Documents/KM-/.cache/caches/gatsby-plugin-image"
+            "cacheDir": "/Users/voidrizoma/KM-/.cache/caches/gatsby-plugin-image"
           }
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         }
       ],
       "presets": [
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/preset-typescript/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
             "plugins": [],
             "allExtensions": false,
@@ -62,21 +62,21 @@
           "options": {}
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
           "options": {
-            "cacheDir": "/Users/voidrizoma/Documents/KM-/.cache/caches/gatsby-plugin-image"
+            "cacheDir": "/Users/voidrizoma/KM-/.cache/caches/gatsby-plugin-image"
           }
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         },
         {
@@ -96,7 +96,7 @@
       ],
       "presets": [
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/preset-typescript/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
             "plugins": [],
             "allExtensions": false,
@@ -117,21 +117,21 @@
           "options": {}
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
           "options": {
-            "cacheDir": "/Users/voidrizoma/Documents/KM-/.cache/caches/gatsby-plugin-image"
+            "cacheDir": "/Users/voidrizoma/KM-/.cache/caches/gatsby-plugin-image"
           }
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         },
         {
@@ -151,7 +151,7 @@
       ],
       "presets": [
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/preset-typescript/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
             "plugins": [],
             "allExtensions": false,
@@ -172,21 +172,21 @@
           "options": {}
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/gatsby-plugin-image/dist/babel-plugin-parse-static-images.js",
           "options": {
-            "cacheDir": "/Users/voidrizoma/Documents/KM-/.cache/caches/gatsby-plugin-image"
+            "cacheDir": "/Users/voidrizoma/KM-/.cache/caches/gatsby-plugin-image"
           }
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         },
         {
@@ -206,7 +206,7 @@
       ],
       "presets": [
         {
-          "name": "/Users/voidrizoma/Documents/KM-/node_modules/@babel/preset-typescript/lib/index.js",
+          "name": "/Users/voidrizoma/KM-/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
             "plugins": [],
             "allExtensions": false,
