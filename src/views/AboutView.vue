@@ -38,7 +38,10 @@
       Since 2019 I’m <span class="name-interest">Frontend developer </span>.
       Currently, <span role="img" aria-label="woman"> 👩‍💻 </span>I’m a frontend
       developer at FluxQR, a fintech mexican startup. Sometimes I write stuffs
-      on <a href="https://dev.to/voidrizoma" class="name-interest">dev.to</a>
+      on
+      <a href="https://dev.to/voidrizoma" target="_blank" class="name-interest"
+        >dev.to</a
+      >
     </p>
   </div>
   <div class="about"><h3>Workshops</h3></div>
@@ -186,10 +189,23 @@ h3 {
   font-size: 5rem;
   font-weight: 600;
   margin: 20px 20px;
-  background: -webkit-linear-gradient(46deg, #7b04ff, #59dcff);
+  background: linear-gradient(
+    to right,
+    #7b04ff 20%,
+    #59dcff 40%,
+    #59dcff 60%,
+    #7b04ff 80%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
+  background-size: 200% auto;
+  animation: shine 5s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 h4 {
@@ -209,6 +225,18 @@ img {
 img:hover {
   opacity: 0.3;
 }
+a {
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+}
+
+a:hover {
+  background: -webkit-linear-gradient(#9d45ff, #007797);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+}
 
 .about {
   min-height: 100vh;
@@ -225,9 +253,7 @@ img:hover {
 
 .name-interest {
   font-size: 26px;
-  background: -webkit-linear-gradient(46deg, #59dcff, #7b04ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+color:#7b04ff;
   font-weight: 900;
 }
 

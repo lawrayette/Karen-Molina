@@ -18,11 +18,26 @@ div {
 }
 h1 {
   font-size: 100px;
-  background: -webkit-linear-gradient(45deg, #9d45ff, #007797);
+ background: linear-gradient(
+    to left,
+    #7b04ff 20%,
+    #59dcff 40%,
+    #59dcff 60%,
+    #7b04ff 80%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  background-size: 200% auto;
+  animation: shine 5s linear infinite;
   font-weight: 500;
   top: -10px;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 h3 {
