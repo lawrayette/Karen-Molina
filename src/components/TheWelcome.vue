@@ -11,18 +11,19 @@
 div {
   margin: auto 0;
   display: flex;
+ background:#181818;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height:100vh;
 }
 h1 {
   font-size: 100px;
  background: linear-gradient(
     to left,
-    #7b04ff 20%,
-    #59dcff 40%,
-    #59dcff 60%,
+    #7900ff 20%,
+    #df00ff 40%,
+    #df00ff 60%,
     #7b04ff 80%
   );
   -webkit-background-clip: text;
@@ -93,7 +94,7 @@ a::before {
 }
 
 a:hover {
-  background: -webkit-linear-gradient(#9d45ff, #007797);
+    background: -webkit-linear-gradient(#ff00d7, #e800ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
@@ -103,7 +104,7 @@ a:hover::after,
 a:hover::before {
   width: calc(50% + 3px);
   height: calc(50% + 3px);
-  border-color: #9d45ff;
+  border-color: #7b04ff;
 }
 
 @media (min-width: 1024px) {
