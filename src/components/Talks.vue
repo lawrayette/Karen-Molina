@@ -111,7 +111,28 @@ img {
   width: 505px;
   object-fit: cover;
 }
+@media only screen and (max-width: 601px) {
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  border: #e7eaed 2px solid;
+  border-radius: 16px;
+  color: #181818;
+}
 
+.image-container {
+  width: 100%;
+  max-height: 450px;
+}
+img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+}
 @media (max-width: 1024px) {
   .set-width {
     max-width: 1280px;

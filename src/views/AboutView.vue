@@ -143,6 +143,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .name-alias {
