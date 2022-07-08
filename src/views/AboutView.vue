@@ -58,12 +58,7 @@ import Talks from "@/components/Talks.vue";
         </p>
       </article>
     </section>
-    <div class="about about-titles"><h3>Workshops</h3></div>
 
-    <Workshops />
-
-    <div class="about about-titles"><h3>Talks</h3></div>
-    <Talks />
   </main>
 </template>
 
