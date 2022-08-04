@@ -1,5 +1,5 @@
 <template>
-  <div class="workshops">
+  <section class="workshops">
     <article class="set-width">
       <div class="card-container">
         <div class="image-container">
@@ -73,7 +73,7 @@
         </div>
       </div>
     </article>
-  </div>
+  </section>
 </template>
 
 <style scoped>
@@ -137,13 +137,16 @@ img {
   border-radius: 16px;
   color: #181818;
 }
+p{
+  display:none;
+}
 
 .image-container {
   width: 100%;
   max-height: 450px;
 }
 img {
-  height: 500px;
+  height: 350px;
   width: 100%;
   object-fit: cover;
 }

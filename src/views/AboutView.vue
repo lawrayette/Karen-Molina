@@ -1,6 +1,8 @@
 <script setup>
 import Workshops from "@/components/Workshops.vue";
 import Talks from "@/components/Talks.vue";
+import Stack from "@/components/Stack.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
@@ -58,11 +60,53 @@ import Talks from "@/components/Talks.vue";
         </p>
       </article>
     </section>
-
+    <div class="about about-titles"><h3 class="animated hinge">Stack</h3></div>
+    <Stack />
+    <div class="about about-titles"><h3>Workshops and Talks</h3></div>
+    <Workshops />
+    <Talks />
+    <Footer />
   </main>
 </template>
 
 <style scoped>
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hinge {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  20%,
+  60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: rotate(60deg) translateY(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(700px);
+  }
+}
+.hinge {
+  margin: 20px;
+  animation-name: hinge;
+}
+
 p {
   font-size: 24px;
   margin-bottom: 10px;
@@ -152,7 +196,6 @@ a:hover {
   color: #7b04ff;
   font-weight: 900;
 }
-
 
 p {
   position: initial;
