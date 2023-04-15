@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Void Rizoma`,
-    siteUrl: ``
+    siteUrl: `https://github.com/voidrizoma/KM-`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
