@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Nav/NavBar";
 
-export default function ({ children }) {
+export default function Layout ({ children }) {
   return (
     <>
       <Navbar />
