@@ -5,6 +5,23 @@
     font-family: 'roboto', sans-serif;
 }
 
+.link{
+  display: block;
+  font-size: 24px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #df00ff;
+  border-top: 2px solid #7900ff;
+  border-bottom: 2px solid #7900ff;
+  padding: 10px;
+  letter-spacing: 2px;
+  transition: all .25s;
+}
+
+.link:hover{
+  letter-spacing: 15px;
+}
+
 .index {
     display: flex;
    background:#181818;
