@@ -18,12 +18,12 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  }, {
-    resolve: 'gatsby-source-filesystem',
+  },  {
+    resolve: `gatsby-source-filesystem`,
     options: {
-      "name": "pages",
-      "path": "./src/pages/"
+      name: `content`,
+      path: `${__dirname}/src/content`,
     },
-    __key: "pages"
-  }]
+  },
+  `gatsby-transformer-remark`,]
 };
