@@ -14,7 +14,7 @@ a{
   padding: 10px;
   letter-spacing: 2px;
   transition: all .25s;
-  position: inherit;
+  position: relative;
   z-index: 20;
 }
 
