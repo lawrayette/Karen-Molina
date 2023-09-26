@@ -47,7 +47,6 @@ const NavbarLinks = () => {
   return (
     <>
       <NavItem to="/">Home</NavItem>
-      <NavItem to="/404">Blog</NavItem>
     </>
   )
 }

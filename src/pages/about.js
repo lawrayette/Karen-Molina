@@ -9,8 +9,8 @@ export default function about() {
         <article class="set-width">
           <p>
             Hi!, my name is 
-            <span class="name-alias">  Karen Molina</span>, also can find me as
-            <span class="name-alias">  Void Rizoma</span>. Currently I’m living in
+            <span class="name-alias">  Karen Molina</span>. 
+Currently I’m living in
             Mexico State. I have two cats 
             <span role="img" aria-label="cat">
               🐈
