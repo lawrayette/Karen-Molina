@@ -51,10 +51,10 @@
     font-size: 35px;
    background: linear-gradient(
       to left,
-      #7900ff 20%,
-      #df00ff 40%,
-      #df00ff 60%,
-      #7b04ff 80%
+      #0202ff 20%,
+      #0080ff 40%,
+      #00aeff 60%,
+      #1504ff 80%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
