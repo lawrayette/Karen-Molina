@@ -5,21 +5,17 @@
     font-family: 'roboto', sans-serif;
 }
 
-.link{
+a{
   display: block;
   font-size: 24px;
   font-family: sans-serif;
   text-decoration: none;
   color: #df00ff;
-  border-top: 2px solid #7900ff;
-  border-bottom: 2px solid #7900ff;
   padding: 10px;
   letter-spacing: 2px;
   transition: all .25s;
-}
-
-.link:hover{
-  letter-spacing: 15px;
+  position: relative;
+  z-index: 20;
 }
 
 .index {
@@ -28,14 +24,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height:100vh;
+    height:100vh;
+    padding: 20px;
   }
   h1 {
     font-size: 100px;
    background: linear-gradient(
       to left,
       #7900ff 20%,
-      #df00ff 40%,
+      #dd03ff 40%,
       #df00ff 60%,
       #7b04ff 80%
     );
@@ -64,6 +61,13 @@
     font-weight: 500;
     top: -10px;
   }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 84px;
+    }
+  }
+
   @keyframes shine {
     to {
       background-position: 200% center;
@@ -84,4 +88,53 @@
     .greetings h3 {
       text-align: left;
     }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+    margin-top: 85px;
+  }
+  
+  .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #7b04ff;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #df00ff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: transparent;
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
   }
