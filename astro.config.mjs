@@ -8,6 +8,6 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: 'https://voidrizoma.dev',
   integrations: [mdx(), sitemap()],
-  output: "server",
+  output: "hybrid",
   adapter: vercel()
 });
