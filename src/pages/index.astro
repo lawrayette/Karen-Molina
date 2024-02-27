@@ -1,8 +1,13 @@
 ---
+import { Image } from "astro:assets";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import HeroImage from "./../assets/Group 8.png";
+import DescDes from "./../assets/rect1.png";
+import DesMov from "./../assets/rect12.png";
+import SkillDes from "./../assets/rect2.png";
 ---
 
 <!doctype html>
@@ -15,7 +20,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 		<main>
 			<section class="hero-Content">
 				<div class="hero-image">
-					<img src="./public/Group 8.png" />
+					<Image src={HeroImage} alt="hero image" />
 				</div>
 				<div class="hero-name">
 					<h3>Hi there! <br /> I'm Karen Molina</h3>
@@ -23,11 +28,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 			</section>
 			<section class="description-Content">
 				<div class="description-picture">
-					<picture>
-						<source media="(max-width: 799px)" srcset="./public/rect1.png" />
-						<source media="(min-width: 800px)" srcset="./public/rect12.png"  width="450px" />
-						<img src="./public/rect12.png" />
-					  </picture>
+					<Image
+						class="description-picture-Desktop"
+						src={DesMov}
+						alt="circle"
+						width={420}
+					/>
+					<Image
+						class="description-picture-Mobile"
+						src={DescDes}
+						alt="circle"
+					/>
 				</div>
 				<div class="description-content-divider">
 					<p class="description-text">
@@ -45,91 +56,33 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 			</section>
 			<section class="skills-content">
 				<div class="skills-divider">
-					<div class="skills-section"> <h4>Frontend</h4> <h4>Steam Mentor</h4> <h4>Dev Mentor</h4> <h4>Speaker</h4></div>
-					<div class="skills-section-mini"> <h4>Frontend</h4> <h4>Steam Mentor</h4> <h4>Dev Mentor</h4> <h4>Speaker</h4></div>
+					<div class="skills-section">
+						<h4>Frontend</h4>
+						<h4>Steam Mentor</h4>
+						<h4>Dev Mentor</h4>
+						<h4>Speaker</h4>
+					</div>
+					<div class="skills-section-mini">
+						<h4>Frontend</h4>
+						<h4>Steam Mentor</h4>
+						<h4>Dev Mentor</h4>
+						<h4>Speaker</h4>
+					</div>
 				</div>
-				<div >
-					<picture>
-						<source media="(max-width: 799px)" srcset="./public/rect2.png" width="300px" />
-						<source media="(min-width: 800px)" srcset="./public/rect2.png"  width="350px" />
-						<img src="./public/rect2.png" />
-					  </picture>
+				<div>
+					<Image
+						class="description-skills-Mobile"
+						src={SkillDes}
+						alt="circle"
+					/>
 				</div>
 			</section>
 			<section></section>
 		</main>
 		<Footer />
-	</body><style>
-		.hero-Content {
-			height: 500px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			background-color: #010101;
-			color: white;
-			padding: 20px;
-		}
-		p {
-			padding: 0 !important;
-		}
-		.hero-image {
-			width: 750px;
-			position: absolute;
-		}
-		.hero-name {
-			width: 750px;
-			position: absolute;
-		}
-		h3 {
-			font-weight: 100;
-		}
-		.description-Content {
-			background-color: #377aa5;
-			color: white;
-			display: flex;
-			max-height: 328px;
-			justify-content: center;
-    align-items: center;
-		}
-		.description-content-divider{
-			max-width: 540px;
-		}
-		.description-text{
-			margin: 30px;
-			text-align: center;
-			font-size: 14px;
-		}
-
-		.skills-content{
-			background-color: #E6DFCE;
-			display: flex;
-    justify-content: center;
-	align-items: center;
-		}
-
-		.skills-divider{
-
-			background-color: #010101;
-			color: white;
-			width: 100%;
-		}
-		.skills-section{
-			display: flex;
-			justify-content: end;
-		}
-		h4{
-			font-weight: 200;
-			text-transform: uppercase;
-			display: inline-block;
-			font-size: 22px;
-			margin: 5px 15px;
-		}
-		.skills-section-mini{
-			display: none;
-		}
-		@media (max-width: 768px) {
+		<style>
 			.hero-Content {
-				max-height: auto;
+				height: 500px;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -137,120 +90,200 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 				color: white;
 				padding: 20px;
 			}
-			.social-links {
-				display: none;
+			p {
+				padding: 0 !important;
 			}
 			.hero-image {
-				width: 98%;
+				width: 750px;
 				position: absolute;
 			}
 			.hero-name {
-				width: auto;
-				right: 80px;
-				top: 480px;
+				width: 750px;
+				position: absolute;
 			}
 			h3 {
 				font-weight: 100;
-				width: auto;
-				text-align: right;
-				font-size: 28px;
 			}
-		.description-content-divider{
-			max-width: 100%;
-			min-height: 300px;
-			position: relative;
-			display: flex;
-    justify-content: center;
-	align-items: center;
-		}
-		.description-picture{
-			position: absolute;
-			width: 250px;
-			left: -10px;
-			bottom: -47px;
-		}
-		.description-text{
-			width: 80%;
-			text-align: center;
-			font-size: 12px;
-		}
-		h4{
-			font-size: 16px;
-			margin: 5px 10px;
-		}
-		.skills-section-mini{
-			display: none;
-		}
-		}
-		@media (max-width: 425px) {
-			.hero-Content {
-				height: 350px;
+			.description-Content {
+				background-color: #377aa5;
+				color: white;
+				display: flex;
+				max-height: 300px;
+				justify-content: center;
+				align-items: center;
+			}
+			.description-content-divider {
+				max-width: 540px;
+				min-width: 400px;
+			}
+
+			.description-picture-Mobile {
+				display: none;
+			}
+			.description-text {
+				margin: 30px;
+				text-align: center;
+				font-size: 14px;
+			}
+
+			.skills-content {
+				background-color: #e6dfce;
 				display: flex;
 				justify-content: center;
 				align-items: center;
+			}
+
+			.skills-divider {
 				background-color: #010101;
 				color: white;
-				padding: 20px;
+				max-width: 1440px;
 			}
-			.social-links {
-				display: none;
+			.skills-section {
+				display: flex;
+				justify-content: end;
 			}
-			.hero-image {
-				width: 320px;
-				position: absolute;
-			}
-			.hero-name {
-				width: auto;
-				right: 21px;
-    top: 340px;
-			}
-			h3 {
-				font-weight: 100;
-				width: auto;
-				text-align: right;
+			h4 {
+				font-weight: 200;
+				text-transform: uppercase;
+				display: inline-block;
 				font-size: 22px;
+				margin: 5px 15px;
 			}
-		.description-content-divider{
-			max-width: 100%;
-			min-height: 300px;
-			position: relative;
-			display: flex;
-    justify-content: center;
-	align-items: center;
-		}
-		.description-picture{
-			display: none;
-		}
-		.description-text{
-			width: 80%;
-			text-align: center;
-			font-size: 12px;
-		}
-		h4{
-			font-size: 16px;
-			margin: 5px 10px;
-		}
-		.skills-content{
-			background-color: #E6DFCE;
-			display: flex;
-    justify-content: center;
-	align-items: center;
-		}
+			.skills-section-mini {
+				display: none;
+			}
+			@media (max-width: 768px) {
+				.hero-Content {
+					max-height: auto;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background-color: #010101;
+					color: white;
+					padding: 20px;
+				}
+				.social-links {
+					display: none;
+				}
+				.hero-image {
+					width: 98%;
+					position: absolute;
+				}
+				.hero-name {
+					width: auto;
+					right: 80px;
+					top: 480px;
+				}
+				h3 {
+					font-weight: 100;
+					width: auto;
+					text-align: right;
+					font-size: 28px;
+				}
+				.description-content-divider {
+					max-width: 100%;
+					min-height: 330px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				.description-picture-Desktop {
+					display: none;
+				}
+				.description-picture-Mobile {
+					display: block;
+					position: relative;
+					top: 95px;
+				}
+				.description-picture {
+					position: absolute;
+					width: 235px;
+					left: -10px;
+				}
+				.description-text {
+					width: 80%;
+					text-align: center;
+					font-size: 12px;
+				}
+				h4 {
+					font-size: 16px;
+					margin: 5px 10px;
+				}
+				.skills-section-mini {
+					display: none;
+				}
+			}
+			@media (max-width: 425px) {
+				.hero-Content {
+					height: 350px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background-color: #010101;
+					color: white;
+					padding: 20px;
+				}
+				.social-links {
+					display: none;
+				}
+				.hero-image {
+					width: 320px;
+					position: absolute;
+				}
+				.hero-name {
+					width: auto;
+					right: 21px;
+					top: 340px;
+				}
+				h3 {
+					font-weight: 100;
+					width: auto;
+					text-align: right;
+					font-size: 22px;
+				}
+				.description-content-divider {
+					max-width: 100%;
+					min-height: 300px;
+					position: relative;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				.description-picture {
+					display: none;
+				}
+				.description-text {
+					width: 80%;
+					text-align: center;
+					font-size: 12px;
+				}
+				h4 {
+					font-size: 16px;
+					margin: 5px 10px;
+				}
+				.skills-content {
+					background-color: #e6dfce;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
 
-		.skills-section{
-			display: none;
-
-		}
-		.skills-section-mini{
-			display: flex;
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    width: 60%;
-    background: #F25832
-		}
-
-		}
-	</style>
+				.skills-section {
+					display: none;
+				}
+				.skills-section-mini {
+					display: flex;
+					position: absolute;
+					flex-direction: column;
+					justify-content: center;
+					align-items: flex-end;
+					width: 60%;
+					background: #f25832;
+				}
+				.description-skills-Mobile{
+					width: 250px;
+				}
+			}
+		</style>
+	</body>
 </html>
