@@ -1,8 +1,8 @@
 import { renderers } from './renderers.mjs';
-import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_BiwPZOYH.mjs';
+import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_CATmFje5.mjs';
 import { serialize, parse } from 'cookie';
-import { A as AstroError, R as ResponseSentError, G as GetStaticPathsRequired, q as InvalidGetStaticPathsReturn, t as InvalidGetStaticPathsEntry, v as GetStaticPathsExpectedParams, w as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, x as ROUTE_TYPE_HEADER, y as MiddlewareNoDataOrNextCalled, z as MiddlewareNotAResponse, N as NoMatchingStaticPathFound, B as PrerenderDynamicEndpointPathCollide, C as ReservedSlotName, D as renderSlotToString, H as renderJSX, J as chunkToString, K as clientAddressSymbol$1, O as ClientAddressNotAvailable, S as StaticClientAddressNotAvailable, Q as responseSentSymbol$1, T as LocalsNotAnObject, V as clientLocalsSymbol, W as ASTRO_VERSION, X as renderEndpoint, Y as renderPage, Z as REROUTABLE_STATUS_CODES, _ as REROUTE_DIRECTIVE_HEADER } from './chunks/astro_DFYM_qYh.mjs';
-import { j as joinPaths, s as slash, p as prependForwardSlash, t as trimSlashes, e as appendForwardSlash, r as removeTrailingForwardSlash, f as collapseDuplicateSlashes } from './chunks/astro/assets-service_6a-76iMr.mjs';
+import { A as AstroError, R as ResponseSentError, G as GetStaticPathsRequired, q as InvalidGetStaticPathsReturn, t as InvalidGetStaticPathsEntry, v as GetStaticPathsExpectedParams, w as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, x as ROUTE_TYPE_HEADER, y as MiddlewareNoDataOrNextCalled, z as MiddlewareNotAResponse, N as NoMatchingStaticPathFound, B as PrerenderDynamicEndpointPathCollide, C as ReservedSlotName, D as renderSlotToString, H as renderJSX, J as chunkToString, K as clientAddressSymbol$1, O as ClientAddressNotAvailable, S as StaticClientAddressNotAvailable, Q as responseSentSymbol$1, T as LocalsNotAnObject, V as clientLocalsSymbol, W as ASTRO_VERSION, X as renderEndpoint, Y as renderPage, Z as REROUTABLE_STATUS_CODES, _ as REROUTE_DIRECTIVE_HEADER } from './chunks/astro_pD1vg0CB.mjs';
+import { j as joinPaths, s as slash, p as prependForwardSlash, t as trimSlashes, e as appendForwardSlash, r as removeTrailingForwardSlash, f as collapseDuplicateSlashes } from './chunks/astro/assets-service_DClnhXUO.mjs';
 import 'kleur/colors';
 import 'clsx';
 import 'fast-glob';
@@ -1138,7 +1138,7 @@ class Slots {
       if (expression) {
         const slot = async () => typeof expression === "function" ? expression(...args) : expression;
         return await renderSlotToString(result, slot).then((res) => {
-          return res != null ? String(res) : res;
+          return res;
         });
       }
       if (typeof component === "function") {
@@ -1285,7 +1285,7 @@ function createResult(args) {
 }
 
 class RenderContext {
-  constructor(pipeline, locals, middleware, pathname, request, routeData, status, cookies = new AstroCookies(request), params = getParams(routeData, pathname)) {
+  constructor(pipeline, locals, middleware, pathname, request, routeData, status, cookies = new AstroCookies(request), params = getParams(routeData, pathname), url = new URL(request.url)) {
     this.pipeline = pipeline;
     this.locals = locals;
     this.middleware = middleware;
@@ -1295,6 +1295,7 @@ class RenderContext {
     this.status = status;
     this.cookies = cookies;
     this.params = params;
+    this.url = url;
   }
   static create({
     locals = {},
@@ -1363,19 +1364,23 @@ class RenderContext {
   }
   createAPIContext(props) {
     const renderContext = this;
-    const { cookies, i18nData, params, pipeline, request } = this;
-    const { currentLocale, preferredLocale, preferredLocaleList } = i18nData;
+    const { cookies, params, pipeline, request, url } = this;
     const generator = `Astro v${ASTRO_VERSION}`;
     const redirect = (path, status = 302) => new Response(null, { status, headers: { Location: path } });
     const site = pipeline.site ? new URL(pipeline.site) : void 0;
-    const url = new URL(request.url);
     return {
       cookies,
-      currentLocale,
+      get currentLocale() {
+        return renderContext.computeCurrentLocale();
+      },
       generator,
       params,
-      preferredLocale,
-      preferredLocaleList,
+      get preferredLocale() {
+        return renderContext.computePreferredLocale();
+      },
+      get preferredLocaleList() {
+        return renderContext.computePreferredLocaleList();
+      },
       props,
       redirect,
       request,
@@ -1456,27 +1461,42 @@ class RenderContext {
    * API Context may be created multiple times per request, i18n data needs to be computed only once.
    * So, it is computed and saved here on creation of the first APIContext and reused for later ones.
    */
-  #i18nData;
-  get i18nData() {
-    if (this.#i18nData)
-      return this.#i18nData;
+  #currentLocale;
+  computeCurrentLocale() {
     const {
+      url,
       pipeline: { i18n },
-      request,
       routeData
     } = this;
     if (!i18n)
-      return {
-        currentLocale: void 0,
-        preferredLocale: void 0,
-        preferredLocaleList: void 0
-      };
+      return;
     const { defaultLocale, locales, strategy } = i18n;
-    return this.#i18nData = {
-      currentLocale: computeCurrentLocale(routeData.route, locales, strategy, defaultLocale),
-      preferredLocale: computePreferredLocale(request, locales),
-      preferredLocaleList: computePreferredLocaleList(request, locales)
-    };
+    return this.#currentLocale ??= computeCurrentLocale(
+      routeData.route,
+      locales,
+      strategy,
+      defaultLocale
+    );
+  }
+  #preferredLocale;
+  computePreferredLocale() {
+    const {
+      pipeline: { i18n },
+      request
+    } = this;
+    if (!i18n)
+      return;
+    return this.#preferredLocale ??= computePreferredLocale(request, i18n.locales);
+  }
+  #preferredLocaleList;
+  computePreferredLocaleList() {
+    const {
+      pipeline: { i18n },
+      request
+    } = this;
+    if (!i18n)
+      return;
+    return this.#preferredLocaleList ??= computePreferredLocaleList(request, i18n.locales);
   }
 }
 
@@ -2025,12 +2045,12 @@ const createExports = (manifest, { middlewareSecret }) => {
   return { default: handler };
 };
 
-const _page0 = () => import('./chunks/generic_QV9u0s2f.mjs');
-const _page1 = () => import('./chunks/about_X8Ks9UG9.mjs');
-const _page2 = () => import('./chunks/index_Dw62fIX0.mjs');
-const _page3 = () => import('./chunks/_.._D8qdRunL.mjs');
-const _page4 = () => import('./chunks/rss_CRpFtrAW.mjs');
-const _page5 = () => import('./chunks/index_Z9RVSpaT.mjs');
+const _page0 = () => import('./chunks/generic_DDcTWPmT.mjs');
+const _page1 = () => import('./chunks/about_DGvH604p.mjs');
+const _page2 = () => import('./chunks/index_CqmWlih2.mjs');
+const _page3 = () => import('./chunks/_.._qhqe75hb.mjs');
+const _page4 = () => import('./chunks/rss_BjowQ5Wa.mjs');
+const _page5 = () => import('./chunks/index_DOGc4abJ.mjs');
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/generic.js", _page0],
     ["src/pages/about.astro", _page1],
@@ -2046,7 +2066,7 @@ const _manifest = Object.assign(manifest, {
     middleware: onRequest
 });
 const _args = {
-    "middlewareSecret": "81aff6fb-dcc7-4289-b0dc-c631f4cf51f0"
+    "middlewareSecret": "d9084431-03fd-4d2c-bbdc-874b0eedefa6"
 };
 const _exports = createExports(_manifest, _args);
 const __astrojsSsrVirtualEntry = _exports.default;
