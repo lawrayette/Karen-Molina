@@ -23,6 +23,7 @@ body {
 	overflow-wrap: break-word;
 	font-size: 20px;
 	line-height: 1.7;
+	background-color: var(--gray-light);
 }
 main {
 	margin: auto;
@@ -34,7 +35,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: var(--blue);
 	line-height: 1.2;
 }
 h1 {
