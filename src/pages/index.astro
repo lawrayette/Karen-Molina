@@ -23,7 +23,7 @@ import SkillDes from "./../assets/rect2.png";
 					<Image src={HeroImage} alt="hero image" />
 				</div>
 				<div class="hero-name">
-					<h3>Hi there! <br /> I'm Karen Molina</h3>
+					<h3 class="info-name">Hi there! <br /> I'm Karen Molina</h3>
 				</div>
 			</section>
 			<section class="description-Content">
@@ -33,11 +33,6 @@ import SkillDes from "./../assets/rect2.png";
 						src={DesMov}
 						alt="circle"
 						width={420}
-					/>
-					<Image
-						class="description-picture-Mobile"
-						src={DescDes}
-						alt="circle"
 					/>
 				</div>
 				<div class="description-content-divider">
@@ -103,6 +98,7 @@ import SkillDes from "./../assets/rect2.png";
 			}
 			h3 {
 				font-weight: 100;
+				color: white;
 			}
 			.description-Content {
 				background-color: #377aa5;
@@ -148,6 +144,7 @@ import SkillDes from "./../assets/rect2.png";
 				display: inline-block;
 				font-size: 22px;
 				margin: 5px 15px;
+				color: white;
 			}
 			.skills-section-mini {
 				display: none;
@@ -234,12 +231,14 @@ import SkillDes from "./../assets/rect2.png";
 					width: auto;
 					right: 21px;
 					top: 340px;
+					color: white !;
 				}
 				h3 {
 					font-weight: 100;
 					width: auto;
 					text-align: right;
 					font-size: 22px;
+					color: white !important;
 				}
 				.description-content-divider {
 					max-width: 100%;
