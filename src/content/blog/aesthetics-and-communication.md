@@ -1,5 +1,5 @@
 ---
-title: 'The Link Between Aesthetics and Communication'
+title: 'The Interplay Between Aesthetics and Communication'
 description: 'Aesthetics, from its origins and recognition as a discipline, has undergone a significant transformation in its object of study'
 pubDate: 'Jan 12 2024'
 ---
